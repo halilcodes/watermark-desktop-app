@@ -25,4 +25,4 @@ copied_img.show()
 plt.imshow(copied_img)
 copied_img.save("watermarked.png")
 
-# this one does not have transparent background... so im gonna try with openCV
+# this one does not have transparent background...
