@@ -34,13 +34,13 @@ def save_results():
 
 
 # Logo Size Setup
-logo = Image.open("watermark_black.png")
+logo = Image.open("watermark_black_halil.png")
 logo = logo.resize((200,100), Image.ANTIALIAS)
 
 
 #-------UI SETUP----------
 window = Tk()
-window.title("Watermark Adder")
+window.title("Watermark Adder by Halil Hasmer")
 window.config(padx=50, pady=50)
 
 #logo
@@ -56,9 +56,9 @@ watermark_label = Label(text="Watermark to add File Path: ")
 watermark_label.grid(row=2, column=0)
 wm_resize_label = Label(text="Label resize percentile: ")
 wm_resize_label.grid(row=3, column=0)
-text_top_label = Label(text="How bottom 0-100(bigger=more bottom): ")
+text_top_label = Label(text="How bottom 1-100(bigger=more bottom): ")
 text_top_label.grid(row=4, column=0)
-text_left_label = Label(text="How left 0-100(bigger=more left): ")
+text_left_label = Label(text="How left 1-100(bigger=more left): ")
 text_left_label.grid(row=5, column=0)
 
 #entries
@@ -67,7 +67,7 @@ image_entry.grid(row=1, column=1, columnspan=2)
 image_entry.insert(0, "photo.jpg")
 watermark_entry = Entry(width=35)
 watermark_entry.grid(row=2, column=1, columnspan=2)
-watermark_entry.insert(0, "watermark_white.png")
+watermark_entry.insert(0, "watermark_white_elcin.png")
 wm_resize_entry = Entry(width=35)
 wm_resize_entry.grid(row=3, column=1, columnspan=2)
 wm_resize_entry.insert(0, "20")
