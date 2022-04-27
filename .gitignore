@@ -6,6 +6,9 @@ __pycache__/
 # C extensions
 *.so
 
+#real person images
+elcin_img.jpeg
+
 # Distribution / packaging
 .Python
 build/
